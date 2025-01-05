@@ -1,0 +1,10 @@
+@font-face {  
+    src: url(ซีฟู๊ด/MN Seafood.ttf) format("truetype");
+}
+div.FontMarket { 
+    font-family:  MN Seafood;
+}
+.flyonui-theme {
+    background-color: #ffffff !important;
+  }
+  

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+        class="jsbin"
+        href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+        rel="stylesheet"
+        type="text/css"
+        />
+        <script
+        class="jsbin"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+        ></script>
+        <script
+        class="jsbin"
+        src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"
+        ></script>
+        <meta charset="UTF-8">
+        <title>Adding suiter</title> 
+    <style>
+        .body {
+            font-family: Kanit;
+            font-size: 18px;
+        }
+        #header {
+            font-family: Kanit;
+            font-size: 28px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            color: #f0f0f0;
+            background-color: #2c673a;
+            padding-bottom: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+        .box {
+            font-family: monospace;
+            font-size: 20px;
+            padding-bottom: 5px;
+        }
+        .detailsbox {
+            font-family: monospace;
+            font-size: 14px;
+        }
+        .boxbig {
+            width:200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="boxbig">
+            
+        </div>
+        <div id="header">Adding fursuit</div>
+        
+        <img id="blah" src="https://placehold.co/150x150" alt="your image" />
+        <div>
+            <input id="pfpfile" onchange="readURL(this);" 
+            type="file" name="filename" 
+            accept="image/gif, image/jpeg, image/png">
+        </div>
+        
+
+        <div class="body" a>Enter your fursuit name</div>
+        <div><input class="detailsbox" type="text"> </div>
+
+        <div class="body">Gender</div>
+        <div>
+            <input class="box" name="Species" type="radio">Male
+        
+            <input class="box" name="Species" type="radio">Female
+        
+            <input class="box" name="Species" type="radio">etc.
+        </div>
+
+
+        <div class="body">Species (you can select more than 1 species)</div>
+        <div>
+            <input class="box" name="Species" type="checkbox">Dog
+        </div>
+        <div>
+            <input class="box" name="Species" type="checkbox">Cat
+        </div>
+        <div>
+            <input class="box" name="Species" type="checkbox">Wolf
+        </div>
+        
+        
+        
+
+        
+
+        <label class="body" for="countries">Country :</label>
+            <select id="cars" name="cars">
+            <option value="Thailand">Thailand</option>
+            <option value="Laos">Laos</option>
+            <option value="Vietnam">Vietnam</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="Malaysian">Malaysian</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="China">China</option>
+            <option value="United State">United State</option>
+            </select>
+        <div class="body">Age</div>
+        <input class="detailsbox" type="text">
+        <div class="body">
+            Biography
+        </div>
+        <textarea class="detailsbox"></textarea>
+        <div>
+            <button onclick="document.location='index.html'">Submit</button>  
+            <button onclick="reset()">Reset</button>  
+        </div>
+
+
+
+        <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+              
+                  reader.onload = function (e) {
+                    $('#blah').attr('src', e.target.result).width(150).height(150);
+                  };
+              
+                  reader.readAsDataURL(input.files[0]);
+                }
+              }
+            </script>
+
+        <script>
+            function reset() {
+                $('#blah').attr('src', 'https://placehold.co/150x150');
+                const pfpfile = document.getElementById('pfpfile');
+                pfpfile.value = '';
+            }
+            
+        </script>
+
+
+    </body>
+</html>
+
