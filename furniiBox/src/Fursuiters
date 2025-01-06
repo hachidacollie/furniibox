@@ -1,0 +1,35 @@
+interface Fursuiter {
+    account: number;
+    name: String;
+    fb: String;
+    x: String;
+    URL: String;
+    BlueSky: string;
+    FurAffinity: String;
+    Telegram: string;
+    vrchat: String;
+    discord: string;
+}
+
+const fursuiter1: Fursuiter = {
+    account: 123124,
+    name: 'me',
+    fb: 'facebook',
+    x: 'twitter',
+    URL: 'twitter.com',
+    BlueSky: 'bluesky.com',
+    FurAffinity: 'fur',
+    Telegram: 'telegra',
+    vrchat: 'vrcaht',
+    discord: 'discord'
+}
+
+export class Fursuiters {
+    private list: any[]; 
+    constructor(list: any[]) {
+        
+    }
+
+    
+    
+}
