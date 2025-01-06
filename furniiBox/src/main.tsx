@@ -8,6 +8,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename="/">
       <App />
+      
     </BrowserRouter>
   </StrictMode>,
 )

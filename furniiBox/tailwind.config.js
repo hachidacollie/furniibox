@@ -8,8 +8,8 @@ export default {
     require('flyonui'),
     require('flyonui/plugin')
   ],
-  flyonui: {
-    themes: []
-  }
+//   // flyonui: {
+//     themes: []
+//   }
   
 }
